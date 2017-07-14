@@ -1,0 +1,209 @@
+@import url(m_style.css);
+html,
+body,
+.container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.container {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.container header {
+  width: 100%;
+  height: 0.88rem;
+  background: #4194f0;
+  display: -webkit-flex;
+  -webkit-flex-direction: row;
+  -webkit-align-items: center;
+}
+.container header a {
+  padding-left: 0.29rem;
+  padding-right: 0.27rem;
+}
+.container header a img {
+  width: 0.38rem;
+  height: auto;
+  background: none;
+}
+.container header p {
+  -webkit-flex: 1;
+  text-align: center;
+  font-size: 0.27rem;
+  margin-left: -0.7rem;
+  color: #fff;
+}
+.container section {
+  -webkit-box-flex: 1;
+  overflow: auto;
+  position: relative;
+  background: #f2f5f7;
+}
+.container section .main nav {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: center;
+  text-align: center;
+  height: 0.63rem;
+  border-bottom: 1px solid #cccccc;
+  background: #fff;
+}
+.container section .main nav .dianpup {
+  -webkit-box-flex: 1;
+  display: block;
+  color: #333333;
+  font-size: 0.3rem;
+}
+.container section .main nav .dianpup:hover,
+.container section .main nav .dianpup.active {
+  color: #4194f0;
+  border-bottom: 3px solid #4194f0;
+  padding: 0.135rem 0;
+}
+.container section .dingdan {
+  padding: 0.2rem ;
+}
+.container section .dingdan .up {
+  height: 0.65rem;
+  background: #fff;
+  padding: 0.2rem;
+  box-sizing: border-box;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  border-left: 4px solid #4194f0;
+}
+.container section .dingdan .up p {
+  font-size: 0.2rem;
+  color: #7f7f7f;
+  -webkit-box-flex: 1;
+}
+.container section .dingdan .up span {
+  font-size: 0.2rem;
+  color: #7f7f7f;
+  -webkit-box-flex: 1;
+}
+.container section .dingdan .center {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  background: #f9f9f9;
+  box-sizing: border-box;
+  border-left: 4px solid #4194f0;
+}
+.container section .dingdan .center .z {
+  -webkit-box-flex: 1;
+}
+.container section .dingdan .center .z .mai {
+  padding: 0.1rem 0.2rem 0 0.2rem;
+  font-size: 0.25rem;
+}
+.container section .dingdan .center .z .shi {
+  padding: 0.1rem 0.2rem 0.2rem 0.4rem;
+  font-size: 0.25rem;
+  font-weight: bold;
+}
+.container section .dingdan .center .z .shi b {
+  color: #4596f0;
+  font-weight: normal;
+}
+.container section .dingdan .center .z .shi img {
+  width: 0.25rem;
+  height: auto;
+  background: none;
+}
+.container section .dingdan .center .z .shi span {
+  font-size: 0.2rem;
+  font-weight: normal;
+}
+.container section .dingdan .center .z p {
+  padding: 0.1rem 0.2rem 0 0.4rem;
+  font-size: 0.25rem;
+  font-weight: bold;
+}
+.container section .dingdan .center .z p b {
+  color: #4596f0;
+  font-weight: normal;
+}
+.container section .dingdan .center .z p img {
+  width: 0.25rem;
+  height: auto;
+  background: none;
+}
+.container section .dingdan .center .z p span {
+  font-size: 0.2rem;
+  font-weight: normal;
+}
+.container section .dingdan .center .y {
+  padding: 0.5rem 0.2rem 0 0;
+}
+.container section .dingdan .center .y img {
+  width: 0.16rem;
+  height: 0.3rem;
+  background: none;
+}
+.container section .dingdan .down {
+  height: 0.73rem;
+  background: #fff;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-pack: end;
+  border-left: 4px solid #4194f0;
+}
+.container section .dingdan .down button {
+  width: 1.35rem;
+  height: 0.48rem;
+  background: none;
+  margin: 0.12rem 0.2rem 0 0;
+  background: #fff;
+  border: 0;
+  text-align: center;
+  border: 1px solid #666666;
+  border-radius: 5px;
+}
+.container .footer {
+  z-index: 9999;
+  background: #fff;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: center;
+  height: 1.1rem;
+  border-top: 1px solid #e6e9eb;
+  box-shadow: 0 0 0.8rem #e6e9eb;
+}
+.container .footer a {
+  display: block;
+  -webkit-box-flex: 1;
+  text-align: center;
+}
+.container .footer a .kuai1 .shou {
+  margin: 0 auto;
+  display: block;
+  width: 0.4rem;
+  height: 0.4rem;
+  background: url(../img/Home1.png) no-repeat;
+  background-size: 0.4rem;
+}
+.container .footer a .kuai1 .dan {
+  margin: 0 auto;
+  display: block;
+  width: 0.4rem;
+  height: 0.4rem;
+  background: url(../img/dindan.png) no-repeat;
+  background-size: 0.4rem;
+}
+.container .footer a .kuai1 .my {
+  margin: 0 auto;
+  display: block;
+  width: 0.4rem;
+  height: 0.4rem;
+  background: url(../img/my.png) no-repeat;
+  background-size: 0.4rem;
+}
+.container .footer a .kuai1 .di_zi {
+  color: #9e9e9e;
+  font-size: 0.18rem;
+}
+.container .footer a .kuai1 .di_zi:hover,
+.container .footer a .kuai1 .di_zi.active22 {
+  color: #4194f0;
+}

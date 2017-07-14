@@ -1,0 +1,209 @@
+@import url(m_style.css);
+.full(@w,@h,@bg)
+{
+    width: @w;
+    height: @h;
+    background: @bg;
+}
+//封装弹性盒
+.box(@dir:horizontal){
+    display: -webkit-box;//吧父元素设置为檀香和布局；
+    -webkit-box-orient: @dir;//为父元素设置子元素的排列方式；
+}
+
+html,body,.container{
+    width: 100%;
+    height:100%;
+    overflow:hidden;
+}
+
+.container{
+    .box(vertical);
+    header{
+        .full(100%,0.88rem,#4194f0);
+         display: -webkit-flex;
+        -webkit-flex-direction: row;
+        -webkit-align-items:center;
+        a{
+            padding-left: 0.29rem;
+            padding-right: 0.27rem;
+            img{
+                .full(0.38rem,auto,none);
+            }
+        }
+        p{
+            -webkit-flex: 1;
+            text-align: center;
+            font-size: 0.27rem;
+            margin-left: -0.7rem;
+            color: #fff;
+                
+            
+        }
+    }
+    section{
+        -webkit-box-flex: 1;
+        overflow: auto;
+        position: relative;
+        background: #f2f5f7;
+        .main{
+                nav{
+                   .box;
+                   -webkit-box-align: center;
+                   text-align: center;
+                   height: 0.63rem;
+                   border-bottom: 1px solid #cccccc;
+                   background: #fff;
+                    .dianpup{
+                        -webkit-box-flex: 1;
+                        display: block;
+                        color: #333333;
+                        font-size: 0.3rem;
+                        &:hover,&.active{
+                            color: #4194f0;
+                            border-bottom: 3px solid #4194f0;
+                            padding: 0.135rem 0;
+                        }
+                    }
+                }
+            }
+            .dingdan{
+                padding:0.2rem ;
+                
+                .up{
+                    height:0.65rem;
+                    background: #fff;
+                    padding: 0.2rem;
+                    box-sizing: border-box;
+                    .box;
+                    border-left:4px solid #4194f0;
+                    p{
+                        font-size:0.2rem;
+                        color:#7f7f7f;
+                        -webkit-box-flex: 1;
+                    }
+                    span{
+                        font-size:0.2rem;
+                        color:#7f7f7f;
+                        -webkit-box-flex: 1;
+                    }
+                }
+                .center{
+                    .box;
+                    background: #f9f9f9;
+                    box-sizing: border-box;
+                    border-left:4px solid #4194f0;
+                    .z{
+                        -webkit-box-flex: 1;
+                        .mai{
+                            padding: 0.1rem 0.2rem 0 0.2rem;
+                            font-size:0.25rem;
+                        }
+                        .shi{
+                            padding: 0.1rem 0.2rem 0.2rem 0.4rem;
+                            font-size:0.25rem;
+                            font-weight: bold;
+                            b{
+                                color:#4596f0;
+                                font-weight: normal;
+                            }
+                            img{
+                                .full(0.25rem,auto,none);
+                            }
+                            span{
+                                font-size:0.2rem;
+                                font-weight: normal;
+                                
+                            }
+                        }
+                        p{
+                            padding: 0.1rem 0.2rem 0 0.4rem;
+                            font-size:0.25rem;
+                            font-weight: bold;
+                            b{
+                                color:#4596f0;
+                                font-weight: normal;
+                            }
+                            img{
+                                .full(0.25rem,auto,none);
+                            }
+                            span{
+                                font-size:0.2rem;
+                                font-weight: normal;
+                                
+                            }
+                        }
+                    }
+                    .y{
+                        padding: 0.5rem 0.2rem 0 0;
+                        img{
+                            .full(0.16rem,0.3rem,none);
+                        }
+                    }
+                }
+                .down{
+                    height:0.73rem;
+                    background: #fff;
+                    .box;
+                    -webkit-box-pack: end;
+                    border-left:4px solid #4194f0;
+                    button{
+                        .full(1.35rem,0.48rem,none);
+                        margin:0.12rem 0.2rem 0 0; 
+                        background: #fff;
+                        border:0;
+                        text-align: center;
+                        border:1px solid #666666;
+                        border-radius: 5px;
+                    }
+                }
+            }
+    }
+    .footer{
+        z-index: 9999;
+         background: #fff;
+        .box;
+        -webkit-box-align: center;
+        height: 1.1rem;
+        border-top: 1px solid #e6e9eb;
+        box-shadow: 0 0 0.8rem #e6e9eb;
+       a{
+           display: block;
+           -webkit-box-flex: 1;
+           text-align: center;
+           .kuai1{
+           .shou{
+               margin: 0 auto;
+               display: block;
+               width: 0.4rem;
+               height: 0.4rem;
+               background: url(../img/Home1.png) no-repeat;
+               background-size: 0.4rem;
+           }
+           .dan{
+               margin: 0 auto;
+               display: block;
+               width: 0.4rem;
+               height: 0.4rem;
+               background: url(../img/dindan.png) no-repeat;
+               background-size: 0.4rem;
+           }
+           .my{
+               margin: 0 auto;
+               display: block; 
+               width: 0.4rem;
+               height: 0.4rem;
+               background: url(../img/my.png) no-repeat;
+               background-size: 0.4rem;
+           }
+           .di_zi{
+               color: #9e9e9e;
+               font-size: 0.18rem; 
+               &:hover,&.active22{
+                   color: #4194f0;
+               }
+           }
+       } 
+       }
+    }
+}    
